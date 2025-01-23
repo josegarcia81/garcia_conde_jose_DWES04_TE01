@@ -1,0 +1,50 @@
+{
+    "incidencias":[
+        {
+            "id":"01",
+            "trabajador":"txema",
+            "hora":"12:00",
+            "instalacion":"maduración",
+            "descripcion":"foco fundido"
+        },
+        {
+            "id":"02",
+            "trabajador":"juan",
+            "hora":"12:30",
+            "instalacion":"recepcion",
+            "descripcion":"puerta entrada rota"
+        },{
+            "id":"03",
+            "trabajador":"pedro",
+            "hora":"13:00",
+            "instalacion":"biometanizacion",
+            "descripcion":"fuga gas tuberia"
+        },{
+            "id":"04",
+            "trabajador":"txema",
+            "hora":"09:30",
+            "instalacion":"trincheras",
+            "descripcion":"cinta rodillo roto"
+        },{
+            "id":"05",
+            "trabajador":"pedro",
+            "hora":"23:00",
+            "instalacion":"pretratamiento",
+            "descripcion":"cinta 106 babero roto"
+        },{
+            "id":"06",
+            "trabajador":"juan",
+            "hora":"17:00",
+            "instalacion":"prensa rechazos",
+            "descripcion":"aguja rota"
+        },{
+            "id":"07",
+            "trabajador":"txema",
+            "hora":"03:00",
+            "instalacion":"exteriores",
+            "descripcion":"foco fundido parking"
+        }
+    ]
+
+
+}
