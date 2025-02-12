@@ -65,17 +65,6 @@ class IncidenciaDTO implements JsonSerializable{
         return $this->descripcion;
     }
 
-    // // Implementación del método jsonSerialize()
-    // public function jsonSerialize() {
-    //     return [
-    //         'idIncidencia' => $this->idIncidencia,
-    //         'idTrabajador' => $this->idTrabajador,
-    //         'idInstalacion' => $this->idInstalacion,
-    //         'hora' => $this->hora,
-    //         'descripcion' => $this->descripcion
-    //     ];
-    // }
-
 }
 
 ?>
