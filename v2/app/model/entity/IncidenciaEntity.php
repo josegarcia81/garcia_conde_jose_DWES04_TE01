@@ -1,15 +1,15 @@
 <?php
 
-class Incidencia
-{
-    public int $idIncidencia;
-    public int $idTrabajador;
-    public int $idInstalacion;
-    public string $hora;
-    public string $descripcion;
+class Incidencia{
 
-    public function __construct(int $idIncidencia, int $idTrabajador,  int $idInstalacion, string $hora, string $descripcion)
-    {
+    private int $idIncidencia;
+    private int $idTrabajador;
+    private int $idInstalacion;
+    private string $hora;
+    private string $descripcion;
+    
+    // Constructor
+    public function __construct(int $idIncidencia, int $idTrabajador,  int $idInstalacion, string $hora, string $descripcion){
         $this->idIncidencia = $idIncidencia;
         $this->idTrabajador = $idTrabajador;
         $this->idInstalacion = $idInstalacion;
@@ -72,3 +72,4 @@ class Incidencia
     }
 
 }
+?>
