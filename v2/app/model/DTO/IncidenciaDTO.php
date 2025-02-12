@@ -3,22 +3,22 @@
 class IncidenciaDTO implements JsonSerializable{
 
     private $idIncidencia;
-    private $trabajador;
-    private $instalacion;
+    private $idTrabajador;
+    private $idInstalacion;
     private $hora;
     private $descripcion;
 
-    public function __construct( $idIncidencia, $trabajador, $instalacion, $hora, $descripcion ){
+    public function __construct( $idIncidencia, $idTrabajador, $idInstalacion, $hora, $descripcion ){
 
-        $this->$idIncidencia = $idIncidencia;
-        $this->$trabajador = $trabajador;
-        $this->$instalacion = $instalacion;
-        $this->$hora = $hora;
-        $this->$descripcion = $descripcion;
+        $this->idIncidencia = $idIncidencia;
+        $this->idTrabajador = $idTrabajador;
+        $this->idInstalacion = $idInstalacion;
+        $this->hora = $hora;
+        $this->descripcion = $descripcion;
 
     }
 
-    public function JsonSerializable(){
+    public function jsonSerialize(){
 
         return get_object_vars($this);
 
@@ -64,6 +64,17 @@ class IncidenciaDTO implements JsonSerializable{
     {
         return $this->descripcion;
     }
+
+    // // Implementación del método jsonSerialize()
+    // public function jsonSerialize() {
+    //     return [
+    //         'idIncidencia' => $this->idIncidencia,
+    //         'idTrabajador' => $this->idTrabajador,
+    //         'idInstalacion' => $this->idInstalacion,
+    //         'hora' => $this->hora,
+    //         'descripcion' => $this->descripcion
+    //     ];
+    // }
 
 }
 

@@ -3,60 +3,40 @@
 // CARGA DE ARCHIVOS NECESARIOS //
 require '../app/core/Router.php';
 require '../app/controllers/Post.php';
-//require '../app/models/Incidencia.php';
-//require '../app/core/Database.php';
-//require '../app/core/DatabaseSingleton.php';
-
-//require '../app/model/DAO/IncidenciaDAO.php';
 
 $url = $_SERVER['QUERY_STRING'];
-
-// 1a prueba
-// Pruebas conesion BD
-//echo '<pre>' .var_dump(Database::connect()). '<pre>';
-
-// 2a prueba
-// $db = DatabaseSingleton::getInstance();
-// $connection = $db->getConnection();
-// //consulta a realizar
-// $query = "SELECT * FROM incidencias";
-// // metemos la query en la conexion
-// $statement = $connection->query($query);
-// $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-// print_r($result);
-
-// // 3a prueba
-// $incidenciaDAO = new incidenciaDAO();
-// $incidencias = $incidenciaDAO->obtenerIncidencias();
-// echo var_dump($incidencias);
-
 
 $router = new Router();
 // CREAR LAS RUTAS EN LA INSTANCIA ROUTER //
 $router->add('/public/post/get',array(
     'controller' => 'Post',
     'action' => 'getAll'
-));
+    )
+);
 
 $router->add('/public/post/get/{id}',array(
     'controller' => 'Post',
     'action' => 'getById'
-));
+    )
+);
 
 $router->add('/public/post/create',array(
     'controller' => 'Post',
     'action' => 'createIncidencia'
-));
+    )
+);
 
 $router->add('/public/post/update/{id}',array(
     'controller' => 'Post',
     'action' => 'updateIncidencia'
-));
+    )
+);
 
 $router->add('/public/post/delete/{id}',array(
     'controller' => 'Post',
     'action' => 'deleteIncidencia'
-));
+    )
+);
 
 // dividir lo que viene por la url y crear un array con los datos 
 $urlParams = explode('/',$url);

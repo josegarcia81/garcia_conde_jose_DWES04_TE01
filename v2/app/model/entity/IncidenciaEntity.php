@@ -12,7 +12,7 @@ class Incidencia
     {
         $this->idIncidencia = $idIncidencia;
         $this->idTrabajador = $idTrabajador;
-        $this->instalacion = $instalacion;
+        $this->idInstalacion = $idInstalacion;
         $this->hora = $hora;
         $this->descripcion = $descripcion;
     }
